@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
@@ -36,7 +37,7 @@
             <div class="text-1">Bonjour, je m'appelle</div>
             <div class="text-2">Taïr Fall</div>
             <div class="text-3"><span class="typing"></span></div>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 </section>
@@ -47,11 +48,11 @@
         <h2 class="title">A propos de moi</h2>
         <div class="about-content">
             <div class="column left">
-                <img src="css/images/about.jpg" alt="">
+                <img src="css/images/moi.jpg" alt="">
             </div>
             <div class="column right">
                 <div class="text">Taïr, <span class="typing-2"></span></div>
-                <p>J'ai actuellement 24 ans et je suis étudiant en informatique à Rouen (76).<br>Je suis un grand passionné de technologies innovantes, l'informatique et les jeux vidéos. J'aime également faire du sport et voyager, j'ai eu la chance de visiter quelques pays tels que l'Espagne, le Sénégal, l'Angleterre...<br><br>Aujourd'hui, mon objectif est d'en apprendre encore d'avantage dans le domaine du développement par le biais de ma formation et de mes recherchers personnels !</p>
+                <p>J'ai actuellement 22 ans et je suis étudiant en informatique à Rouen (76).<br>Je suis un grand passionné de technologies innovantes, l'informatique et les jeux vidéos. J'aime également faire du sport et voyager, j'ai eu la chance de visiter quelques pays tels que l'Espagne, le Sénégal, l'Angleterre... En parralèle de ma formation, je découvre de mon côté de nouveaux outils de travails tels que le moteur Unreal Engine ou encore le logiciel de modélisation 3D Blender car je m'intéresse beaucoup à la création graphique.<br><br>Aujourd'hui, mon objectif est d'en apprendre encore d'avantage dans le domaine du développement par le biais de ma formation et de développer de nouvelles compétences lors de mes travaux personnels !</p>
                 <a href="pdf/download.php?pdf=CV_Tair_Fall.pdf">Télécharger mon CV</a>
             </div>
         </div>
@@ -67,7 +68,7 @@
                 <div class="text">Mes compétences et expériences créatives</div>
                 <p>Mon apprentissage en autodidacte ainsi que ma formation m'ont permis de découvrir les langages de programmation fondamentaux du Développement Web, voici une représentation de mes compétences actuelles.</p>
                 <br>Autres compétences:</p>
-                <p class="other-skills">CMS Wordpress - Responsive Design - Framework Bootstrap - Framework VueJS  Framework Symphony - Docker - Ajax - jQuery - GraphQL - Figma</p>
+                <p class="other-skills">CMS Wordpress - Responsive Design - Framework Bootstrap - Framework VueJS  Framework Symfony - Docker - Ajax - jQuery - GraphQL - Figma - Blender</p>
             </div>
             <div class="column right">
                 <div class="bars">
@@ -113,63 +114,40 @@
 <!-- Contact -->
 <section class="contact" id="contact">
     <div class="max-width">
-        <h2 class="title">Contact</h2>
+        <h2 class="title">Liens utiles</h2>
         <div class="contact-content">
-            <div class="column left">
-                <div class="text">Contactez-moi !</div>
-                <p>Des questions concernant mes compétences ou projets réalisés ?</p>
-                <div class="icons">
-                    <div class="row">
-                        <i class="fas fa-user"></i>
-                        <div class="info">
-                            <div class="head">Nom & Prénom</div>
-                            <div class="sub-title">Fall Taïr</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info">
-                            <div class="head">Adresse</div>
-                            <div class="sub-title">Rouen, France</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-envelope"></i>
-                        <div class="info">
-                            <div class="head">Email</div>
-                            <div class="sub-title">tairfall76@sfr.fr</div>
-                        </div>
-                    </div>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
                 </div>
+                <a href="https://www.linkedin.com/in/ta%C3%AFrfall/"><span>Linkedin</span></a>
             </div>
-            <div class="column right">
-                <div class="text">Formulaire de contact</div>
-                <form id="form" action="https://formspree.io/f/mzbyojqw" method="POST">
-                    <div class="fields">
-                        <div class="field lastname">
-                            <input type="text" name="lastname" placeholder="Nom" required>
-                        </div>
-                        <div class="field firstname">
-                            <input type="text" name="firstname" placeholder="Prénom" required>
-                        </div>
-                        <div class="field email">
-                            <input type="email" name="email" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <div class="field textarea">
-                        <textarea cols="30" rows="10" name="message" placeholder="Votre message" value="" required></textarea>
-                    </div>
-                    <div class="button">
-                        <button type="submit" onclick="">Envoyez</button>
-                    </div>
-                </form>
+            <div class="button">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <a href="mailto: tairfall76@sfr.fr"><span>E-Mail</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <a href="https://github.com/TairFall"><span>Github</span></a>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <i class="fab fa-artstation"></i>
+                </div>
+                <a href="https://www.artstation.com/flawlesss"><span>Artstation</span></a>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <!-- FOOTER -->
 <footer>
-    <span>Created By <a href="#">Taïr Fall</a> | <span class="far fa-copyright"></span> 2021 All Rights Reserved.</span>
+    <span>Created By <a href="https://www.linkedin.com/in/ta%C3%AFrfall/">Taïr Fall</a> | <span class="far fa-copyright"></span> 2021 All Rights Reserved.</span>
 </footer>
 <script src="js/script.js"></script>
 </body>
